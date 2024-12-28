@@ -17,7 +17,7 @@ module.exports = {
 		});
 		if (bingo) {
 			await interaction.reply({
-				content: `https://images.kurieldev.tk/api/cards/bingoGOU?numbers=${encodeURIComponent(bingo.numbers.join(","))}`,
+				content: `https://prismatic-squirrel-9e8dca.netlify.app/api/cards/bingo?numbers=${encodeURIComponent(bingo.numbers.join(","))}`,
 				ephemeral: true,
 			});
 		} else {
