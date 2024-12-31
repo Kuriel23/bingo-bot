@@ -6,8 +6,8 @@ module.exports = {
 		.setDescription("Comece o bingo!")
 		.setDefaultMemberPermissions(discord.PermissionFlagsBits.Administrator),
 	async execute(interaction, client) {
-		interaction.reply({ content: "Ah shit, here we go again" });
-		client.channels.cache.get(interaction.client.id).send({
+		interaction.reply("Ah shit, here we go again");
+		interaction.channel.send({
 			embeds: [
 				new discord.EmbedBuilder().setTitle("Bingo!").setColor(client.cor),
 			],
