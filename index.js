@@ -15,7 +15,7 @@ const client = new discord.Client({
 	},
 });
 
-client.cor = 'BLUE';
+client.cor = "#7785cc";
 client.canais = {
 	errors: '1048621344218173593',
 };
